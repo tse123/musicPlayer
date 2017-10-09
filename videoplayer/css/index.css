@@ -11,7 +11,7 @@ li{
 	list-style:none;
 }
 .box{
-	width:1000px;
+	width:600px;
 	height:650px;
 	margin:0 auto;
 }
@@ -19,7 +19,6 @@ li{
 	width:600px;
 	height:650px;
 	float:left;
-	background: darkred;
 }
 .videoBox{
 	width:600px;
@@ -42,11 +41,12 @@ li{
 	background: white;
 	position: absolute;
 	left:50px;
-	bottom:100px;
+	bottom:80px;
 	border-radius:5px;
+	display:none;
 }
 .barWid{
-	width:100px;
+	width:0px;
 	height:10px;
 	position: absolute;
 	left:0px;
@@ -71,6 +71,7 @@ li{
 	left:0px;
 	bottom: 30px;
 	overflow: hidden;
+	display:none;
 }
 .clis{
 	width:180px;
@@ -110,7 +111,7 @@ li{
 	position: relative;
 }
 .volBar .volWid{
-	width:20px;
+	width:0px;
 	height:6px;
 	position: absolute;
 	left:0px;
@@ -128,69 +129,8 @@ li{
 	top:-2px;
 	cursor:pointer;
 }
-.boxRight{
-	width:400px;
-	height:650px;
+.videotime{
+	height:30px;
+	line-height:30px;
 	float:left;
-	background:#1a1a1a;
-}
-.rightHeader{
-	height:80px;
-	border-bottom: 1px solid #252525;
-	line-height:80px;
-	text-indent:20px;
-	font-size:16px;
-	color:white;
-	font-weight: bold;
-}
-.rightlist{
-	width:100%;
-	height:auto;
-}
-.rightlist li{
-	width:100%;
-	height:100px;
-	border-bottom: 1px solid #252525;
-	cursor: pointer;
-}
-.rightlist li .div1{
-	width:50px;
-	height:100px;
-	float:left;
-	text-align: center;
-	line-height: 100px;
-	font-size:14px;
-}
-.rightlist li .div2{
-	width:300px;
-	height:100px;
-	float:left;
-}
-.div2 .divimg{
-	width:100px;
-	height:60px;
-	float:left;
-	margin-top:20px;
-}
-.divimg img{
-	width:100%;
-	height:100%;
-}
-.div2 .infobox{
-	width:200px;
-	height:100px;
-	float:left;
-}
-.infobox .p1{
-	height:50px;
-	line-height:70px;
-	font-size:14px;
-	text-indent:20px;
-}
-.infobox .p2{
-	height:50px;
-	line-height:20px;
-	font-size:12px;
-	text-indent:20px;
-	color:#4c4c4c;
 }
