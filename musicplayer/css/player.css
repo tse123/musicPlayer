@@ -1,0 +1,260 @@
+*{
+	margin:0;
+	padding:0;
+}
+body,html{
+	width:100%;
+	height:100%;
+	position: relative;
+	color: white;
+	font-family: "微软雅黑";
+}
+li{
+	list-style: none;
+}
+.boxBac{
+	width:100%;
+	height:100%;
+	position: absolute;
+	left:0;
+	top:0;
+	z-index:-100;
+	background-repeat: no-repeat;
+	
+	filter: blur(20px);
+	-webkit-filter: blur(20px);
+}
+.box{
+	width:1200px;
+	height:650px;
+	overflow: hidden;
+	margin:0 auto;
+}
+.boxLeft{
+	width:400px;
+	height:600px;
+	float:left;
+	padding-top:50px;
+	position: relative;
+}
+.boxLeft .boxImg{
+	width:400px;
+	height:400px;
+	border-radius: 50%;
+	background: url(../img/cd.png) no-repeat 0px 0px;
+	background-size:100% 100%;
+	box-shadow: 0px 0px 20px black;
+	/*animation:move 2s linear infinite;*/
+}
+
+
+@-webkit-keyframes move {
+    from{
+        -webkit-transform: rotate(0deg);
+    }
+    to{
+        -webkit-transform: rotate(360deg);
+    }
+}
+
+
+
+
+.boxImg .imgWrap{
+	width:200px;
+	height:200px;
+	overflow: hidden;
+	border-radius:50%;
+	float:left;
+	margin-left:100px;
+	margin-top:100px;
+}
+.recordNeedle{
+	width:79px;
+	height:229px;
+	position: absolute;
+	right:-10px;
+	top:40px;
+	transform-origin:57px 21px;
+	transform: rotate(-25deg);
+	transition: all 1s;
+}
+/*播放按钮组*/
+.playBtns{
+	width:400px;
+	height:160px;
+	
+}
+.playBtns div{
+	width:80px;
+	height:160px;
+	float:left;
+	line-height:160px;
+	text-align: center;
+}
+.playBtns div i{
+	font-size:20px;
+	cursor:pointer;
+}
+.playBtns .voiceBox{
+	position: relative;
+}
+.playBtns .voiceBox .voice{
+	width:6px;
+	height:100px;
+	background: rgba(0,0,0,0.6);
+	border-radius:3px;
+	position: absolute;
+	left:38px;
+	top:-40px;
+	display:none;
+}
+.voice .voiceBar{
+	display:block;
+	width:6px;
+	height:0px;
+	background: white;
+	position: absolute;
+	left:0px;
+	bottom: 0px;
+	border-radius: 3px;
+	/*transition: all 1s;*/
+	cursor:pointer;
+}
+.progressBox{
+	width:400px;
+	height:30px;
+	overflow: hidden;
+	font-size:12px;
+}
+.progressBox .goingTime{
+	float:left;
+	width:50px;
+	height:30px;
+	line-height:30px;
+}
+.progressBox .progressBar{
+	width:280px;
+	height:8px;
+	float:left;
+	float:left;
+	background: rgba(255,255,255,0.6);
+	margin-top:11px;
+	border-radius:4px;
+}
+.barWid{
+	width:0px;
+	height:100%;
+	background: #ee7473;
+	border-radius:4px;
+	position: relative;
+	/*transition:0.3s;*/
+}
+.barWid .barCircle{
+	width:6px;
+	height:6px;
+	border:5px solid white;
+	border-radius:50%;
+	position: absolute;
+	right:-5px;
+	background: #e97274;
+	top:-4px;
+	cursor:pointer;
+	
+}
+.progressBox .allTime{
+	float:right;
+	width:50px;
+	height:30px;
+	line-height:30px;
+}
+.boxRight{
+	width:400px;
+	height:600px;
+	float:left;
+	margin-top:50px;
+	margin-left:100px;
+	letter-spacing: 2px;
+}
+.musicheader{
+	height:40px;
+	line-height:40px;
+}
+.playername{
+	height:30px;
+	line-height:30px;
+	font-size:14px;
+	color:#b9bdbc;
+	border-bottom: 1px solid #73746f;
+}
+.lyrics{
+	width:400px;
+	height:400px;
+	margin:0 auto;
+	overflow: hidden;
+	font-size:12px;
+	position: relative;
+}
+.lyrics div{
+	width:100%;
+	height:auto;
+	position: absolute;
+	left:0px;
+	top:0px;
+	overflow: hidden;
+	transition: all 0.3s;
+}
+.lyrics p{
+	width:100%;
+	height:30px;
+	line-height:30px;
+	text-align: center;
+	overflow: hidden;
+	
+}
+.alldoings{
+	height:30px;
+	width:400px;
+	padding-top:82px;
+}
+.alldoings div{
+	width:100px;
+	height:30px;
+	float:left;
+	text-align: center;
+	line-height:30px;
+}
+.alldoings div i{
+	font-size:20px;
+}
+.boxMenu{
+	width:300px;
+	height:600px;
+	float:left;
+	margin-top:50px;
+	font-size:12px;
+}
+.boxMenu ul{
+	width:250px;
+	height:auto;  
+	float:right;
+}
+.boxMenu ul li{
+	height:50px;
+}
+.boxMenu ul li .span1{
+	float:left;
+	width:14px;
+	height:14px;
+	margin-top:18px;
+	text-align: center;
+	line-height:14px;
+}
+.boxMenu ul li .span2{
+	float:left;
+	height:14px;
+	margin-top:18px;
+	margin-left:5px;
+	line-height:14px;
+	cursor:pointer;
+}

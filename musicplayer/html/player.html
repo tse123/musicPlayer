@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>音乐播放器</title>
+		<link rel="stylesheet" type="text/css" href="../css/player.css"/>
+		<link rel="stylesheet" type="text/css" href="../css/iconfont.css"/>
+	</head>
+	<script src="../js/jquery-1.11.3.min.js" type="text/javascript" charset="utf-8"></script>
+	<script src="../js/player.js?num=1234567" type="text/javascript" charset="utf-8"></script>
+	<body>
+		<!--播放器背景图-->
+		<div class="boxBac" style="background:#87754d url(../img/2b8e33ccadfe3ecaef9c1d3c742270f05ecb18ae.jpg) no-repeat 0px 0px;background-size:100% 100% ;"></div>
+		<audio src="../music/Charlie Puth - Look At Me Now.mp3" id="music" type="audio/mp3" preload ></audio>
+		<!--音乐播放器界面-->
+		<div class="box">
+			<div class="boxLeft">
+				<div class="boxImg">
+					<div class="imgWrap">
+						<img src="../img/6631765955586153538.jpg" width="200"  />
+					</div>
+				</div>
+				<!--唱片针-->
+				<div class="recordNeedle">
+					<img src="../img/cd_tou.png" />
+				</div>
+				<!--播放按钮等-->
+				<div class="playBtns">
+					<!--随机-->
+					<div><i class="iconfont icon-suiji"></i></div>
+					<!--左进-->
+					<div><i class="iconfont icon-headway"></i></div>
+					<!--暂停-->
+					<div><i class="iconfont icon-player-play" id="musicPlay"></i></div>
+					<!--右进-->
+					<div><i class="iconfont icon-headway1"></i></div>
+					<!--声音-->
+					<div class="voiceBox">
+						<i class="iconfont icon-shengyin" id="vol"></i>
+						<p class="voice"><span class="voiceBar"></span></p>
+					</div>
+				</div>
+				<!--播放进度条-->
+				<div class="progressBox">
+					<div class="goingTime">00:00</div>
+					<div class="progressBar">
+						<div class="barWid">
+							<div class="barCircle"></div>
+						</div>
+					</div>
+					<div class="allTime">00:00</div>
+				</div>
+			</div>
+			<div class="boxRight">
+				<div class="musicheader">Look At Me Now</div>
+				<div class="playername">Charlie Puth</div>  
+				<!--歌词部分开始-->
+				<div class="lyrics">
+					<div></div>
+				</div>
+				<!--歌词部分结束-->
+				<!--歌曲的下载删除操作等-->
+				<div class="alldoings">
+					<!--下载-->
+					<div><i class="iconfont icon-xiazai"></i></div>
+					<!--收藏-->
+					<div><i class="iconfont icon-shoucang"></i></div>
+					<!--分享-->
+					<div><i class="iconfont icon-fenxiang"></i></div>
+					<!--更多-->
+					<div><i class="iconfont icon-gengduo"></i></div>
+				</div>
+			</div>
+			<!--歌曲列表-->
+			<div class="boxMenu">
+				<ul>
+					<li><span class="span1">1</span><span class="span2">Charlie Puth - Look At Me Now</span></li>
+					<li><span class="span1">2</span><span class="span2">Various Artists - Part Of My Sexy</span></li>
+					<li><span class="span1">3</span><span class="span2">冯提莫-空心</span></li>
+					<li><span class="span1">4</span><span class="span2">Delacey - Dream It Possible</span></li>
+					<li><span class="span1">5</span><span class="span2">Sam Tsui,Alex G - Don't Wanna Know</span></li>
+				</ul>
+			</div>
+		</div>
+	</body>
+</html>
